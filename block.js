@@ -4,9 +4,9 @@
  * https://github.com/modularwp/gutenberg-example-block-one
  */
 ( function() {
-	var __ = wp.i18n.__; // The __() for internationalization.
+	var __ = wp.i18n.__; // The __() function for internationalization.
 	var el = wp.element.createElement; // The wp.element.createElement() function to create elements.
-	var registerBlockType = wp.blocks.registerBlockType; // The registerBlockType() to register blocks.
+	var registerBlockType = wp.blocks.registerBlockType; // The registerBlockType() function to register blocks.
 
 	/**
 	 * Register block
