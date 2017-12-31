@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Gutenberg Example Block One
  * Plugin URI: https://github.com/modularwp/gutenberg-example-block-one
- * Description: A simple Gutenberg block
+ * Description: A static Gutenberg block example.
  * Author: ModularWP
  * Author URI: https://modularwp.com/
  * Version: 1.0.0
