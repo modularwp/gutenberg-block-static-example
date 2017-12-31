@@ -23,7 +23,7 @@
 			icon: 'carrot', // Block icon from Dashicons. https://developer.wordpress.org/resource/dashicons/.
 			category: 'common', // Block category. Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 
-			// Defines the block withing the editor.
+			// Defines the block within the editor.
 			edit: function() {
 				return el(
 					'p', // Tag type.
