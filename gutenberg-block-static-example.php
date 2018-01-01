@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Gutenberg Example Block One
+ * Plugin Name: Gutenberg Block Static Example
  * Plugin URI: https://github.com/modularwp/gutenberg-example-block-one
- * Description: A static Gutenberg block example.
+ * Description: A example Gutenberg block with static content.
  * Author: ModularWP
  * Author URI: https://modularwp.com/
  * Version: 1.0.0
@@ -18,9 +18,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Enqueue the block's assets for the editor.
  *
- * `wp-blocks`: includes block type registration and related functions.
- * `wp-element`: includes the WordPress Element abstraction for describing the structure of your blocks.
- * `wp-i18n`: To internationalize the block's text.
+ * wp-blocks:  The registerBlockType() function to register blocks.
+ * wp-element: The wp.element.createElement() function to create elements.
+ * wp-i18n:    The __() function for internationalization.
  *
  * @since 1.0.0
  */
