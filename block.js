@@ -5,7 +5,7 @@
  */
 ( function() {
 	var __ = wp.i18n.__; // The __() function for internationalization.
-	var el = wp.element.createElement; // The wp.element.createElement() function to create elements.
+	var createElement = wp.element.createElement; // The wp.element.createElement() function to create elements.
 	var registerBlockType = wp.blocks.registerBlockType; // The registerBlockType() function to register blocks.
 
 	/**
@@ -25,7 +25,7 @@
 
 			// Defines the block within the editor.
 			edit: function( props ) {
-				return el(
+				return createElement(
 					'p', // Tag type.
 					{
 						className: props.className,  // Class name is generated using the block's name prefixed with wp-block-, replacing the / namespace separator with a single -.
@@ -36,7 +36,7 @@
 
 			// Defines the saved block.
 			save: function( props ) {
-				return el(
+				return createElement(
 					'p', // Tag type.
 					{
 						className: props.className,  // Class name is generated using the block's name prefixed with wp-block-, replacing the / namespace separator with a single -.
