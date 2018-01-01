@@ -1,7 +1,7 @@
 /**
- * Example Block One
+ * Static Block Example
  *
- * https://github.com/modularwp/gutenberg-example-block-one
+ * https://github.com/modularwp/gutenberg-block-static-example
  */
 ( function() {
 	var __ = wp.i18n.__; // The __() function for internationalization.
@@ -17,27 +17,31 @@
 	 *                             otherwise "undefined".
 	 */
 	registerBlockType(
-		'mdlr/example-block-one', // Block name. Must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
+		'mdlr/static-block-example', // Block name. Must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 		{
-			title: __( 'Example Block One', 'mdlr_textdomain' ), // Block title. __() function allows for internationalization.
+			title: __( 'Static Block Example' ), // Block title. __() function allows for internationalization.
 			icon: 'carrot', // Block icon from Dashicons. https://developer.wordpress.org/resource/dashicons/.
 			category: 'common', // Block category. Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 
 			// Defines the block within the editor.
-			edit: function() {
+			edit: function( props ) {
 				return el(
 					'p', // Tag type.
-					{ className: 'wp-block-mdlr-example-block-one' }, // The class="wp-block-gb-01-basic" : The class name is generated using the block's name prefixed with wp-block-, replacing the / namespace separator with a single -.
-					'Example Block One'
+					{
+						className: props.className,  // Class name is generated using the block's name prefixed with wp-block-, replacing the / namespace separator with a single -.
+					},
+					'Static block example.' // Block content
 				);
 			},
 
 			// Defines the saved block.
-			save: function() {
+			save: function( props ) {
 				return el(
 					'p', // Tag type.
-					{ className: 'wp-block-mdlr-example-block-one' }, // The class="wp-block-gb-01-basic" : The class name is generated using the block's name prefixed with wp-block-, replacing the / namespace separator with a single -.
-					'Example Block One'
+					{
+						className: props.className,  // Class name is generated using the block's name prefixed with wp-block-, replacing the / namespace separator with a single -.
+					},
+					'Static block example.' // Block content
 				);
 			},
 		}
