@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function mdlr_static_block_example_backend_enqueue() {
 	wp_enqueue_script(
-		'mdlr-example-block-one-backend-script', // Unique handle.
+		'mdlr-static-block-example-backend-script', // Unique handle.
 		plugins_url( 'block.js', __FILE__ ), // block.js: We register the block here.
 		array( 'wp-blocks', 'wp-i18n', 'wp-element' ), // Dependencies, defined above.
 		filemtime( plugin_dir_path( __FILE__ ) . 'block.js' ) // filemtime — Gets file modification time.

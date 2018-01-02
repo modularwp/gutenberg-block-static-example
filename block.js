@@ -20,7 +20,7 @@
 		'mdlr/static-block-example', // Block name. Must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 		{
 			title: __( 'Static Block Example' ), // Block title. __() function allows for internationalization.
-			icon: 'carrot', // Block icon from Dashicons. https://developer.wordpress.org/resource/dashicons/.
+			icon: 'lock', // Block icon from Dashicons. https://developer.wordpress.org/resource/dashicons/.
 			category: 'common', // Block category. Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 
 			// Defines the block within the editor.
