@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Gutenberg Block: Static Example
- * Plugin URI: https://github.com/modularwp/gutenberg-example-block-one
+ * Plugin URI: https://github.com/modularwp/gutenberg-block-static-example
  * Description: A example Gutenberg block with static content.
  * Author: ModularWP
  * Author URI: https://modularwp.com/
